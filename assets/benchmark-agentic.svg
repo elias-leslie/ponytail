@@ -1,5 +1,5 @@
-<svg viewBox="0 0 860 430" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
-  <title>Each arm vs the no-skill baseline across every metric, Claude Code on Haiku 4.5</title>
+<svg viewBox="0 0 860 488" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <title>Each arm vs the no-skill baseline across every metric, plus safety, Claude Code on Haiku 4.5</title>
   <text x="430" y="24" font-size="15" font-weight="600" fill="#8b949e" text-anchor="middle">Every metric vs the no-skill baseline (Claude Code, Haiku 4.5, 12 tasks)</text>
 
   <rect x="212" y="38" width="12" height="12" rx="2" fill="#8b949e"/><text x="229" y="48" font-size="12" fill="#8b949e">baseline</text>
@@ -51,5 +51,12 @@
   <text x="720" y="380" font-size="13" fill="#8b949e" text-anchor="middle">time</text>
   <text x="720" y="395" font-size="10" fill="#8b949e" opacity="0.8" text-anchor="middle">base 69s</text>
 
-  <text x="20" y="420" font-size="11" fill="#8b949e" opacity="0.8">Each bar = that arm's mean as a % of the no-skill baseline (the gray 100% bars). Lower is leaner / cheaper / faster; caveman rises above 100% on tokens, cost and time. n=4. Writeup: benchmarks/results/2026-06-18-agentic.md</text>
+  <text x="20" y="418" font-size="11" fill="#8b949e" opacity="0.8">Each bar = that arm's mean as a % of the no-skill baseline (the gray 100% bars). Lower is leaner / cheaper / faster; caveman rises above 100% on tokens, cost and time. n=4.</text>
+
+  <line x1="20" y1="438" x2="815" y2="438" stroke="#8b949e" stroke-opacity="0.25"/>
+  <text x="20" y="460" font-size="11" fill="#8b949e" opacity="0.9">Safety, separate 6-task adversarial tier (path-traversal, SQLi, token forgery, malformed input, rate-limit). Higher is safer:</text>
+  <text x="90" y="478" font-size="12" fill="#8b949e">baseline 100%</text>
+  <text x="230" y="478" font-size="12" fill="#d9822b">caveman 100%</text>
+  <text x="370" y="478" font-size="12" font-weight="600" fill="#2da44e">ponytail 100%</text>
+  <text x="510" y="478" font-size="12" fill="#8957e5">yagni-oneliner <tspan fill="#cf222e" font-weight="600">95%</tspan> (dropped a guard once)</text>
 </svg>
